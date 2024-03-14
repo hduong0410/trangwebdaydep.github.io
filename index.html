@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+	.header{
+    background-image: url(https://intphcm.com/data/upload/poster-giay.jpg);    
+    background-color: green;
+    color: rgb(255, 255, 255);
+    width: 89%;
+    height: 400px;
+    margin: 0px auto;
+}
+
+.text{
+    margin-left: 120px;
+    
+}
+.root{
+            background-color: rgb(0, 0, 0);
+            width: 98%;
+            text-align: left;
+            padding: 0px 10px 0px 10px;
+        }    
+.menu-web{
+    background-color: rgb(0, 0, 0);
+    width: 98%;
+    height: 50px;
+    top: 30px;
+    left: 15px;
+    margin: 0px auto;
+    font-size: 15px;
+}
+
+.roost{
+    list-style-type: none;
+}
+
+.roost li{
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.roost li a{
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    padding: 0px 15px 15px 15px;
+    line-height: 50px;
+    display: block;
+}
+
+.roost li a:hover{
+   background-color: rgb(90, 83, 83);
+    color: rgb(255, 255, 255);
+    transform: ease-in 0.35s; 
+}
+
+.sub-menu{
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sub-menu li{
+    list-style: none;
+}
+
+.sub-menu li a{
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    border: 1px solid #fefefe;
+    line-height: 40px;
+    text-indent: 10px;
+}
+
+.roost li:hover .sub-menu{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transform: ease-in 0.35s;
+}
+
+.sub-menu li a:hover{
+    background-color: rgb(90, 83, 83);
+    color: rgb(255, 255, 255);
+}.roost {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.roost li {
+    float: left;
+    position: relative;
+}
+
+.roost li a {
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    padding: 0px 15px;
+    line-height: 50px;
+    display: block;
+}
+
+.roost li a:hover {
+    background-color: rgb(90, 83, 83);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.35s ease-in;
+}
+
+.sub-menu {
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 0;
+}
+
+.sub-menu li {
+    list-style: none;
+}
+
+.sub-menu li a {
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #fefefe;
+}
+
+.sub-menu li a:hover {
+    background-color: rgb(90, 83, 83);
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(164, 164, 164);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bang{
+    border: 1px solid #ccc;
+    width: 98%;
+    margin: 0px auto;
+}
+td{width: 20%;border: 1px solid #000000;
+    text-align: center;
+margin: 0px auto;}
+.sp1{width: 150px;height: 140px; border: 1px rgb(253, 253, 253) solid;}
+.giacu{background-color: yellow; font-weight: bold;}
+s{color: red;}
+i{color: red; font-weight: bold; font-size: 18px;}
+.centered-div {
+            text-align: center;
+            margin-top: 50px;
+        }
+.bang1{
+border: 1px solid #ccc;
+width: 50%;
+margin: 0px auto;
+}
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+}
+
+.footer .centered-div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer .noidung {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .bang1 {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.footer .bang1 td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.footer .bang1 td:first-child {
+    width: 60%;
+}
+</style>
+</head>
+<body>
+    <div class="root">
+        <p style="color: white;">Hotline: 094.163.7320; Địa chỉ: Thường Tín - Hà Nội.</p>		
+            </div>
+    <div class="header">
+        <div class="text">
+            <h1 style="color: black;">CỬA HÀNG GIÀY DÉP</h1>
+        </div>
+    </div>
+    <div class="menu-web">
+    <div class="menu">
+        <ul class="roost">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Hãng khác</a>
+            <ul class="sub-menu">
+                <li><a href="depcrosss.html">Dép Cross</a></li>
+                <li><a href="caogottt.html">Giày Cao Gót</a></li>
+                <li><a href="thethao.html">Giày thể thao</a></li>
+            </ul>
+            </li>
+            <li><a href="nika.html">Nike</a>
+            </li>
+            <li><a href="adidu.html">Adidas</a></li>
+            <li><a href="dathang.html">Đặt hàng</a></li>
+            <li><a href="">Liên hệ</a>
+                <ul class="sub-menu">
+                <li><a href="https://www.facebook.com/h.duong0410/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/hd.hane/">Instagarm</a></li>
+            </ul></li>
+            
+        </ul>
+    </div>
+    </div>
+    <div class="content">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>    
+    </div>
+    <div class="noidung">
+        <table class="bang">
+            <tr class="h1">
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkvvaom3xqzh1c" alt="">
+                <p>Giày Thể Thao Asia Nam Nữ</p>
+                <p class="giacu">Giá bán cũ:<s>150.000</s></p>    
+                <i>Giá: 130.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/sg-11134201-7qvg8-lkg0z1utxccgd9" alt="">
+                <p>Giày Thể Thao Nam Thời Trang Năng Động</p>
+                <p class="giacu">Giá bán cũ:<s>279.000</s></p>    
+                <i>Giá: 199.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+                <td><img class="sp1" src="https://www.juniorcouture.ae/dw/image/v2/BGHV_PRD/on/demandware.static/-/Sites-master-catalog/default/dw445f5b00/images/BLN-654251-W2CA4/654251_W2CA4_a.jpg?sw=1000&sh=1000" alt="">
+                <p>Giày Balenciaga Full Black</p>
+                <p class="giacu">Giá bán cũ:<s>900.000</s></p>    
+                <i>Giá: 499.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+                <td><img class="sp1" src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/533882_w09om_1000.png_49e0549f3a_f02a5bb11ab74d3da41f69e3d23b536f.png" alt="">
+                <p>Giày Balenciaga BlackRed</p>
+                <p class="giacu">Giá bán cũ:<s>165.000</s></p>    
+                <i>Giá: 86.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+            </tr>
+            <tr>
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-ln13kqirp3tpba" alt="">
+            <p>Dép Cross SHUAIBANGZHU NOVA </p>
+            <p class="giacu">Giá bán cũ:<s>165.000</s></p>    
+            <i>Giá: 86.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td>
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/12846542e2d08467a125a1b18f33b46e" alt="">
+            <p>Dép Cross Hoạ Tiết Sao Đêm 💖💖Hotrend </p>
+            <p class="giacu">Giá bán cũ:<s>250.000</s></p>    
+            <i>Giá: 175.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td>    
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/547466e4f8a0edbe9cd4f897a5e9e01f" alt="">
+            <p>Dép Cross Khủng Long Lượn Sóng</p>
+            <p class="giacu">Giá bán cũ:<s>250.000</s></p>    
+            <i>Giá: 175.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td>    
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbn0-lpw38wfubzev5f" alt="">
+            <p>Dép Cross Thể Thao</p>
+            <p class="giacu">Giá bán cũ:<s>250.000</s></p>   
+            <i>Giá: 175.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td>    
+            </tr>
+            <tr>
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/sg-11134201-22120-6sg7jva3ualvba" alt="">
+            <p>Giày_Nike Air Force 1 Vệt Đen</p>
+            <p class="giacu">Giá bán cũ:<s>550.000</s></p>                        
+            <i>Giá: 300.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td>
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/vn-11134201-23020-hut4i4ocgnnvc1" alt="">
+            <p>Giày _Nike Air Force 1 Dây Thừng</p>
+            <p class="giacu">Giá bán cũ:<s>550.000</s></p>    
+            <i>Giá: 300.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td>    
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/0a610d82675c78de70d29b66b39f88a7" alt="">
+            <p>Giày Cao Gót Mũi Nhọn Đính Đá Pha Lê </p>
+            <p class="giacu">Giá bán cũ:<s>300.000</s></p>    
+            <i>Giá: 286.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td> 
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/cn-11134207-7qukw-lhd415ctx13zff" alt="">
+            <p>Giày Cao Gót Đính Đá Pha Lê Và Nơ</p>
+            <p class="giacu">Giá bán cũ:<s>365.000</s></p>    
+            <i>Giá: 300.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td>    
+            </tr>
+        </table>
+    </div>
+    <div class="centered-div">
+        <h1>SẢN PHẨM BÁN CHẠY</h1>
+    </div>
+    <div class="noidung">
+        <table class="bang">
+            <tr class="h1">
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lpq4c2mxqqwp97" alt="">
+                <p>Nike Air Force 1 LV Full Trắng Chữ Vàng</p>
+                <p class="giacu">Giá bán cũ:<s>800.000</s></p>    
+                <i>Giá: 540.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+                <td><img class="sp1" src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/ecom-668563w3cq51210_f-removebg-preview_649a7c73557c4f1d99f01f05a9ffebb2-300x173.png" alt="" width="40px" height="50px">
+                <p>Giày Balenciaga Full Trắng</p>
+                <p class="giacu">Giá bán cũ:<s>1.200.000</s></p>    
+                <i>Giá: 700.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-ll80vxhz7fzqbb" alt="">
+                <p>Giày Adidas Forum 84 Low 2 Màu Trắng Và Xanh</p>
+                <p class="giacu">Giá bán cũ:<s>900.000</s></p>    
+                <i>Giá: 499.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/12846542e2d08467a125a1b18f33b46e" alt="">
+                    <p>Dép Cross Hoạ Tiết Sao Đêm 💖💖Hotrend </p>
+                    <p class="giacu">Giá bán cũ:<s>250.000</s></p>    
+                    <i>Giá: 175.000</i><br>
+                    <a href="dathang.html" class="button">Đặt hàng</a></td>
+            </tr>
+            <tr>
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/sg-11134201-7rbld-lpqbmpa9gon93a" alt="">
+            <p>Dép Sandal Nữ Hiện Đại Thể Thao</p>
+            <p class="giacu">Giá bán cũ:<s>165.000</s></p>    
+            <i>Giá:79.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td>
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmeouqtxetpb3b" alt="">
+            <p>Giày Air Jordan Xanh Trắng KIMETSU</p>
+            <p class="giacu">Giá bán cũ:<s>850.000</s></p>    
+            <i>Giá: 499.000</i><br>
+            <a href="dathang.html" class="button">Đặt hàng</a></td>    
+            <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/e039aaac8e8161523eb5af041240dc7c" alt="">
+                <p>Giày Thể Thao Họa Tiết Anime One Piece</p>
+                <p class="giacu">Giá bán cũ:<s>800.000</s></p>    
+                <i>Giá: 399.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>    
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/8902b7f8e8f722e17e1d8712658e6a4e" alt="">
+                    <p>Giày Thể Thao Lưới Thoáng Khí Thời Trang</p>
+                    <p class="giacu">Giá bán cũ:<s>449.000</s></p>    
+                    <i>Giá: 349.000</i><br>
+                    <a href="dathang.html" class="button">Đặt hàng</a></td>    
+            </tr>
+        </table>
+    </div>
+    <div class="centered-div">
+        <h1>FLASH SALE</h1>
+        <h2>Đồng giá 99k/1 đôi</h2>
+    </div>
+    <div class="noidung">
+        <table class="bang">
+            <tr class="h1">
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lodgxtbo85vbe8" alt="">
+                <p>Giày Thể Thao MLB Đế Độn Cổ Cao Trắng</p>
+                <p class="giacu">Giá bán cũ:<s>300.000</s></p>    
+                <i>Giá: 99.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lntw27c8zm5pda" alt="">
+                <p>Giày Thể Thao MLB Đế Độn Cổ Cao Đen</p>
+                <p class="giacu">Giá bán cũ:<s>300.000</s></p>    
+                <i>Giá: 99.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljmmsxm7d9ys04" alt="">
+                <p>Giày Sneaker MLB Chunky Liner NY</p>
+                <p class="giacu">Giá bán cũ:<s>300.000</s></p>    
+                <i>Giá: 99.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+                <td><img class="sp1" src="https://down-vn.img.susercontent.com/file/vn-11134201-7qukw-ljaoejo2asjwb1" alt="">
+                <p>Giày Thể Thao LV Trainer</p>
+                <p class="giacu">Giá bán cũ:<s>300.000</s></p>    
+                <i>Giá: 99.000</i><br>
+                <a href="dathang.html" class="button">Đặt hàng</a></td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="footer">
+        <div class="centered-div">
+            <h1>ĐỔI HÀNG - BẢO HÀNH</h1>
+        </div>
+        <div class="noidung">
+            <table class="bang1">
+                <tr>
+                    <td>QUY ĐỊNH ĐỔI HÀNG CỦA SHOP NHƯ THẾ NÀO? <br>
+                        Những sản phẩm bị lỗi hoặc cấn móp shop sẽ đổi hàng. <br>
+                        Shop nhận đổi sản phẩm với giá trị bằng hoặc cao hơn. <br>
+                        Bảo hành trong vòng 15 ngày. <br></td>
+                    <td><p>Hệ thống giày thể thao số 1 Hà Nội</p>
+                        <p>Hotline 094.163.7320</p>
+                        <p>Store : Thường Tín, Hà Nội</p>
+                        <p>&copy; 2024 Dương Huy Hoàng - CNTT 1707</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+

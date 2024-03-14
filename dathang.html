@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+	.header{
+    background-image: url(https://intphcm.com/data/upload/poster-giay.jpg);    
+    background-color: green;
+    color: rgb(255, 255, 255);
+    width: 89%;
+    height: 400px;
+    margin: 0px auto;
+}
+.form-center {
+    margin: 0 auto;
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-center label,
+.form-center input,
+.form-center select,
+.form-center button {
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.text{
+    margin-left: 120px;
+    
+}
+.root{
+            background-color: rgb(0, 0, 0);
+            width: 98%;
+            text-align: left;
+            padding: 0px 10px 0px 10px;
+        }    
+.menu-web{
+    background-color: rgb(0, 0, 0);
+    width: 98%;
+    height: 50px;
+    top: 30px;
+    left: 15px;
+    margin: 0px auto;
+    font-size: 15px;
+}
+
+.roost{
+    list-style-type: none;
+}
+
+.roost li{
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.roost li a{
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    padding: 0px 15px 15px 15px;
+    line-height: 50px;
+    display: block;
+}
+
+.roost li a:hover{
+   background-color: rgb(90, 83, 83);
+    color: rgb(255, 255, 255);
+    transform: ease-in 0.35s; 
+}
+
+.sub-menu{
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sub-menu li{
+    list-style: none;
+}
+
+.sub-menu li a{
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    border: 1px solid #fefefe;
+    line-height: 40px;
+    text-indent: 10px;
+}
+
+.roost li:hover .sub-menu{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transform: ease-in 0.35s;
+}
+
+.sub-menu li a:hover{
+    background-color: rgb(90, 83, 83);
+    color: rgb(255, 255, 255);
+}.roost {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.roost li {
+    float: left;
+    position: relative;
+}
+
+.roost li a {
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    padding: 0px 15px;
+    line-height: 50px;
+    display: block;
+}
+
+.roost li a:hover {
+    background-color: rgb(90, 83, 83);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.35s ease-in;
+}
+
+.sub-menu {
+    width: 250px;
+    background-color: rgb(0, 0, 0);
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    padding: 0;
+}
+
+.sub-menu li {
+    list-style: none;
+}
+
+.sub-menu li a {
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #fefefe;
+}
+
+.sub-menu li a:hover {
+    background-color: rgb(90, 83, 83);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.order-form {
+    margin: 0 auto; 
+    width: 50%; 
+    max-width: 600px; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.order-form {
+    width: 70%;
+}
+
+.products, .order-form {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.products li, .order-form label {
+    margin-bottom: 10px;
+}
+
+
+.order-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #555;
+}
+
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form select,
+.order-form input[type="number"],
+.order-form button {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.order-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #555;
+}
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px 0;
+}
+.footer .centered-div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer .noidung {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .bang1 {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.footer .bang1 td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.footer .bang1 td:first-child {
+    width: 60%;
+}
+</style>
+</head>
+<body>
+    <div class="root">
+        <p style="color: white;">Hotline: 094.163.7320; Địa chỉ: Thường Tín - Hà Nội.</p>		
+            </div>
+    <div class="header">
+        <div class="text">
+            <h1 style="color: black;">CỬA HÀNG GIÀY DÉP</h1>
+        </div>
+    </div>
+    <div class="menu-web">
+    <div class="menu">
+        <ul class="roost">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="">Hãng khác</a>
+            <ul class="sub-menu">
+                <li><a href="depcrosss.html">Dép Cross</a></li>
+                <li><a href="caogottt.html">Giày Cao Gót</a></li>
+                <li><a href="thethao.html">Giày thể thao</a></li>
+            </ul>
+            </li>
+            <li><a href="nika.html">Nike</a>
+            </li>
+            <li><a href="adidu.html">Adidas</a></li>
+            <li><a href="dathang.html">Đặt hàng</a></li>
+            <li><a href="">Liên hệ</a>
+                <ul class="sub-menu">
+                <li><a href="https://www.facebook.com/h.duong0410/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/hd.hane/">Instagarm</a></li>
+            </ul></li>
+            
+        </ul>
+    </div>
+    </div>
+    <div class="content">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>    
+    </div>
+        <section class="order-form">
+            <h2>Trang Đặt Hàng</h2>
+            <form class="form-center" action="submit_order.php" method="post">
+                <label for="product">Sản Phẩm:</label><br>
+                <select id="product" name="product" required>
+                    <option value="">Chọn sản phẩm</option>
+                    <option value="product1">Giày Thể Thao Asia Nam Nữ - 130.000VNĐ                    </option>
+                    <option value="product2">Giày Thể Thao Nam Thời Trang Năng Động - 199.000VNĐ                    </option>
+                    <option value="product3">Giày Balenciaga Full Black - 499.000VNĐ</option>
+                    <option value="product4">Giày Balenciaga Full BlackRed - 86.000VNĐ</option>
+                    <option value="product5">Dép Cross SHUAIBANGZHU NOVA - 86.000VNĐ                  </option>
+                    <option value="product6">Dép Cross Hoạ Tiết Sao Đêm 💖💖Hotrend - 175.000VNĐ                    </option>
+                    <option value="product7">Dép Cross Khủng Long Lượn Sóng - 175.000VNĐ                    </option>
+                    <option value="product8">Dép Cross Thể Thao - 175.000VNĐ                    </option>
+                    <option value="product9">Giày_Nike Air Force 1 Vệt Đen - 300.000VNĐ                    </option>
+                    <option value="product11">Giày Cao Gót Mũi Nhọn Đính Đá Pha Lê - 286.000VNĐ</option>
+                    <option value="product12">Giày Cao Gót Đính Đá Pha Lê Và Nơ - 300.000VNĐ                  </option>
+                    <option value="product13">Dép Cross Chống Trượt Chống Mài Mòn - 150.000VNĐ                    </option>
+                    <option value="product3">Giày Balenciaga Full Trắng - 700.000VNĐ                  </option>
+                    <option value="product3">Nike Air Force 1 LV Full Trắng Chữ Vàng - 540.000VNĐ                    </option>
+                    <option value="product3">Dép Sandal Nữ Hiện Đại Thể Thao - 79.000VNĐ</option>
+                    <option value="product3">Giày Air Jordan Xanh Trắng KIMETSU - 499.000VNĐ</option>
+                    <option value="product3">Giày Thể Thao Họa Tiết Anime One Piece - 399.000VNĐ</option>
+                    <option value="product3">Giày Thể Thao Lưới Thoáng Khí Thời Trang - 349.000VNĐ                   </option>
+                    <option value="product3">Giày Thể Thao LV Trainer - 99.000VNĐ                </option>
+                    <option value="product3">Giày Sneaker MLB Chunky Liner NY - 99.000VNĐ                   </option>
+                    <option value="product3">Dép Cross Tặng 12 stick - 100.000VNĐ                   </option>
+                    <option value="product3">Nike Air Jordan Cổ Cao Nam Nữ - 700.000VNĐ                   </option> 
+                    <option value="product3">Giày Nike Air Jordan Cổ Thấp - 300.000VNĐ                   </option> 
+                    <option value="product3">Giày _Nike Air Force 1 Dây Thừng - 300.000VNĐ                    </option> 
+                    <option value="product3">Giày Adidass Alpha - 286.000VNĐ                    </option> 
+                    <option value="product3">Giày Adidas Trắng Xanh Lá Cây - 175.000VNĐ                    </option> 
+                    <option value="product3">Giày Adidas Đen Trắng - 175.000VNĐ                    </option> 
+                    <option value="product3">Giày Adidas Trắng Kem - 175.000VNĐ                  </option> 
+                    <option value="product3">Giày Adidas Trắng Đế Nâu - 300.000VNĐ                    </option> 
+                    <option value="product3">Giày Adidas Samba Đen - 300.000VNĐ                    </option> 
+                    <option value="product3">Giày Adidas Samba Trắng Đen - 286.000VNĐ                   </option> 
+
+                </select><br>
+                <label for="size">Size Giày:</label><br>
+    <select id="size" name="size" required>
+        <option value="">Chọn Size</option>
+        <option value="36">36</option>
+        <option value="37">37</option>
+        <option value="38">38</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+        <option value="44">44</option>
+    </select><br>
+                <label for="name">Họ và Tên:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="sodienthoai">Số điện thoại:</label><br>
+                <input type="sodienthoai" id="sodienthoai" name="sodienthoai" required><br>
+                <label for="diachi">Địa chỉ:</label><br>
+                <input type="diachi" id="diachi" name="diachi" required><br>
+                <label for="quantity">Số Lượng:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" required><br>
+            </select><br>
+                <button type="submit">Đặt Hàng</button>
+            </form>
+        </section>
+    </main>
+    <div class="footer">
+        <div class="centered-div">
+            <h1>ĐỔI HÀNG - BẢO HÀNH</h1>
+        </div>
+        <div class="noidung">
+            <table class="bang1">
+                <tr>
+                    <td>QUY ĐỊNH ĐỔI HÀNG CỦA SHOP NHƯ THẾ NÀO? <br>
+                        Những sản phẩm bị lỗi hoặc cấn móp shop sẽ đổi hàng. <br>
+                        Shop nhận đổi sản phẩm với giá trị bằng hoặc cao hơn. <br>
+                        Bảo hành trong vòng 15 ngày. <br></td>
+                    <td><p>Hệ thống giày thể thao số 1 Hà Nội</p>
+                        <p>Hotline 094.163.7320</p>
+                        <p>Store : Thường Tín, Hà Nội</p>
+                        <p>&copy; 2024 Dương Huy Hoàng - CNTT 1707</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
